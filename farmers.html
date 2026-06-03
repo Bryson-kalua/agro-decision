@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ADAS - Farmer Registration</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/farmers.css">
+
+</head>
+
+<body>
+
+    <!-- ================= CONTAINER ================= -->
+
+    <div class="container">
+
+        <!-- ================= LEFT SIDE ================= -->
+
+        <div class="left-section">
+
+            <h1>ADAS</h1>
+
+            <p>
+                Agro Decision Advisor System helps farmers make
+                better agricultural decisions through smart
+                digital farming solutions.
+            </p>
+
+            <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?q=80&w=1200&auto=format&fit=crop"
+                alt="Farmer">
+
+        </div>
+
+        <!-- ================= RIGHT SIDE ================= -->
+
+        <div class="right-section">
+
+            <form id="farmerForm">
+
+                <h2>Farmer Registration</h2>
+
+                <!-- FULL NAME -->
+
+                <div class="input-group">
+
+                    <label>Full Name</label>
+
+                    <input type="text" id="name" placeholder="Enter full name">
+
+                </div>
+
+                <!-- DISTRICT -->
+
+                <div class="input-group">
+
+                    <label>District</label>
+
+                    <select id="district">
+
+                        <option value="">Select District</option>
+
+                        <option>Lilongwe</option>
+                        <option>Blantyre</option>
+                        <option>Mzuzu</option>
+                        <option>Zomba</option>
+                        <option>Kasungu</option>
+
+                    </select>
+
+                </div>
+
+                <!-- FARM SIZE -->
+
+                <div class="input-group">
+
+                    <label>Farm Size (Hectares)</label>
+
+                    <input type="number" id="farmSize" placeholder="Enter farm size">
+
+                </div>
+
+                <!-- SOIL TYPE -->
+
+                <div class="input-group">
+
+                    <label>Soil Type</label>
+
+                    <select id="soil">
+
+                        <option value="">Select Soil Type</option>
+
+                        <option>Loamy</option>
+                        <option>Clay</option>
+                        <option>Sandy</option>
+
+                    </select>
+
+                </div>
+
+                <!-- RAINFALL -->
+
+                <div class="input-group">
+
+                    <label>Rainfall (mm)</label>
+
+                    <input type="number" id="rainfall" placeholder="Enter rainfall">
+
+                </div>
+
+                <!-- TEMPERATURE -->
+
+                <div class="input-group">
+
+                    <label>Temperature (°C)</label>
+
+                    <input type="number" id="temperature" placeholder="Enter temperature">
+
+                </div>
+
+                <!-- SUBMIT BUTTON -->
+
+                <button type="submit" class="btn">
+
+                    Register Farmer
+
+                </button>
+
+                <!-- MESSAGE -->
+
+                <p id="message"></p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <!-- External JavaScript -->
+    <script src="js/farmers.js"></script>
+
+</body>
+
+</html>

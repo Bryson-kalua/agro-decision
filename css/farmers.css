@@ -1,0 +1,309 @@
+/* ================= GLOBAL STYLES ================= */
+
+:root {
+
+    --primary: #2E7D32;
+    --secondary: #4CAF50;
+    --dark: #1B1B1B;
+    --light: #F5F5F5;
+    --white: #FFFFFF;
+    --gray: #777;
+    --danger: #D32F2F;
+
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+
+    font-family: Arial, sans-serif;
+    background: var(--light);
+
+}
+
+/* ================= MAIN CONTAINER ================= */
+
+.container {
+
+    display: flex;
+    min-height: 100vh;
+
+}
+
+/* ================= LEFT SECTION ================= */
+
+.left-section {
+
+    flex: 1;
+
+    background: var(--primary);
+    color: var(--white);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 50px;
+    text-align: center;
+
+}
+
+.left-section h1 {
+
+    font-size: 4rem;
+    margin-bottom: 20px;
+
+}
+
+.left-section p {
+
+    max-width: 500px;
+    margin-bottom: 30px;
+    line-height: 1.8;
+
+}
+
+.left-section img {
+
+    width: 90%;
+    max-width: 500px;
+
+    border-radius: 10px;
+
+}
+
+/* ================= RIGHT SECTION ================= */
+
+.right-section {
+
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 50px;
+
+    background: var(--white);
+
+}
+
+/* ================= FORM ================= */
+
+form {
+
+    width: 100%;
+    max-width: 500px;
+
+}
+
+form h2 {
+
+    text-align: center;
+    margin-bottom: 30px;
+
+    color: var(--primary);
+
+}
+
+/* ================= INPUT GROUP ================= */
+
+.input-group {
+
+    margin-bottom: 20px;
+
+}
+
+.input-group label {
+
+    display: block;
+    margin-bottom: 8px;
+
+    font-weight: bold;
+
+}
+
+.input-group input,
+.input-group select {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    font-size: 1rem;
+
+    outline: none;
+
+}
+
+.input-group input:focus,
+.input-group select:focus {
+
+    border-color: var(--primary);
+
+}
+
+/* ================= BUTTON ================= */
+
+.btn {
+
+    width: 100%;
+
+    background: var(--primary);
+    color: var(--white);
+
+    border: none;
+
+    padding: 15px;
+
+    border-radius: 5px;
+
+    font-size: 1rem;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+.btn:hover {
+
+    background: var(--secondary);
+
+}
+
+/* ================= MESSAGE ================= */
+
+#message {
+
+    margin-top: 20px;
+    text-align: center;
+
+    font-weight: bold;
+
+}
+
+/* ================= RESPONSIVE DESIGN ================= */
+
+@media(max-width: 992px){
+
+    .container {
+
+        flex-direction: column;
+
+    }
+
+    .left-section {
+
+        padding: 30px;
+
+    }
+
+    .right-section {
+
+        padding: 30px;
+
+    }
+
+}
+
+@media(max-width: 768px){
+
+    .left-section h1 {
+
+        font-size: 3rem;
+
+    }
+
+}
+/* ================= RESPONSIVE DESIGN ================= */
+
+@media(max-width:992px){
+
+    .cards,
+    .feature-container,
+    .statistics{
+
+        grid-template-columns: repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    header{
+
+        flex-direction: column;
+
+    }
+
+    nav ul{
+
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .about{
+
+        flex-direction: column;
+
+    }
+
+    .cards,
+    .feature-container,
+    .statistics{
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .hero-content h1{
+
+        font-size: 2.5rem;
+
+    }
+
+    .sidebar{
+
+        width: 100%;
+        position: relative;
+        height: auto;
+
+    }
+
+    .main-content{
+
+        margin-left: 0;
+        width: 100%;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .hero-content h1{
+
+        font-size: 2rem;
+
+    }
+
+    .btn{
+
+        width: 100%;
+
+    }
+
+}
